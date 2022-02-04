@@ -2,6 +2,8 @@
 
 /**
  * main() prints texts to the standard output
+ * 
+ * Return: always return 0
  */
 int main(void)
 {
