@@ -1,11 +1,10 @@
 #include "main.h"
 /**
-* abs - returns absolute value of input argument
+* _abs - returns absolute value of input argument
 * @n: any integer
-* 
+*
 * Return: absolute value of input
 */
-
 int _abs(int n)
 {
 	if (n == 0)
