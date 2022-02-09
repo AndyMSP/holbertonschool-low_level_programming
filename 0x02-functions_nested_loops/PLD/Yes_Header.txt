@@ -1,0 +1,23 @@
+# 1 "main_with_header.c"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 31 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 32 "<command-line>" 2
+# 1 "main_with_header.c"
+# 1 "header.h" 1
+This entire file gets placed into the file where it was included
+
+It has multiple lines in this case
+
+I can write functions, prototypes and all kinds of other stuff in here
+
+In this case Im just writing english sentences so the next step (compilation proper) would probably fail
+
+int prototype(char ch, in i);
+# 2 "main_with_header.c" 2
+
+int main(void)
+{
+ return (0);
+}

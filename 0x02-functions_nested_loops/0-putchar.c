@@ -1,4 +1,7 @@
 #include "main.h"
+#include "main.h"
+#include <stdio.h>
+#include <stdio.h>
 
 /**
  *main - this funtion writes "_putchar" to the standard output
