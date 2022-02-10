@@ -8,13 +8,8 @@
  *
  *Return: Always return 0
  */
-int positive_or_negative(void)
+int positive_or_negative(int n)
 {
-	int n;
-
-	srand(time(0));
-	n = 0;
-	/* your code goes there */
 	printf("%i is ", n);
 	if (n < 0)
 		printf("negative\n");
