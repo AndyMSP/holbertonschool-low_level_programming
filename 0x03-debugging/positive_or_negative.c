@@ -4,7 +4,7 @@
 /* more headers goes there */
 
 /**
- *positive_or_negative - prints a random number and describes it as positive, negative or 0
+ *positive_or_negative - describes a number as positive, negative or 0
  *
  *Return: Always return 0
  */
