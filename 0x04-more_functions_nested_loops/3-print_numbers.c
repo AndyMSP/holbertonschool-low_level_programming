@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* print_numbers - prints numbers 0 to 9
-*
-* Return: no return value
-*/
+ * print_numbers - prints numbers 0 to 9
+ *
+ * Return: no return value
+ */
 void print_numbers(void)
 {
 	int i;
