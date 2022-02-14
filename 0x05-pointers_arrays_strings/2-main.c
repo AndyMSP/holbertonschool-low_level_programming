@@ -11,7 +11,7 @@ int main(void)
 	char *str;
 	int len;
 
-	str = "one";
+	str = "";
 	len = _strlen(str);
 	printf("%d\n", len);
 	return (0);
