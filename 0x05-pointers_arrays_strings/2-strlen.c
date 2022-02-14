@@ -2,7 +2,7 @@
 
 /**
  * _strlen - Calculates length of a string
- * @str: a string ending with '\0'
+ * @s: a string ending with '\0'
  *
  * Return: int length of string
  */
@@ -17,6 +17,6 @@ int _strlen(char *s)
 		c = *(s + i);
 	}
 
-	return (i-1);
+	return (i - 1);
 
 }
