@@ -19,7 +19,5 @@ char *_strcpy(char *dest, char *src)
 	} while (src[i] != '\0');
 	dest[i] = '\0';
 
-	printf("%d %d %d\n", i, src[i], dest[i]);
-
 	return (dest);
 }
