@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * rev_string - Reverses the string
+ * @str: pointer to a char variable
+ *
+ * Return: No return value
+ */
+
 void rev_string(char *s)
 {
 	int count = 0;
