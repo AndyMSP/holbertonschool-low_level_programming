@@ -13,9 +13,7 @@ int main(void)
 
 	ptr = _strcpy(s1, "Holberton!");
 
-	/*	
-	 *	printf("%s", s1);
-	 */
+	printf("%s", s1);
 	printf("%s", ptr);
 	return (0);
 }
