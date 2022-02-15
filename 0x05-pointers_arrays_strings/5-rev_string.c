@@ -17,7 +17,7 @@ void rev_string(char *str)
 	int l = len(str);
 	char ts, tf;
 
-	for (i = 0; i <= l / 2; i++)
+	for (i = 0; i <= (l / 2) - 1; i++)
 	{
 		ts = str[i];
 		tf = str[l - i - 1];
