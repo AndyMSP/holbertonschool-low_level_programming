@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char s[9] = "01234567";
+	char s[9] = "abcdefgh";
 
 	printf("%s\n", s);
 	rev_string(s);
