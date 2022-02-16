@@ -20,7 +20,6 @@ int _atoi(char *s)
 	int multiplier = 0;
 	int place = 0;
 
-	/* Count minus signs and find first digit location */
 	while (!(s[i] >= '0' && s[i] <= '9'))
 	{
 		if (s[i] == '-')
@@ -30,14 +29,12 @@ int _atoi(char *s)
 		i++;
 		first = i;
 	}
-	/* Determine number of digits */
 	i = first;
 	while (s[i] >= '0' && s[i] <= '9')
 	{
 		digits++;
 		i++;
 	}
-	/* Convert digits in string to an integer value */
 	place = digits;
 	for (i = first; i < first + digits; i++)
 	{
@@ -49,11 +46,9 @@ int _atoi(char *s)
 			j++;
 		}
 		place--;
-		sum = sum + -1*(s[i] - 48) * multiplier;
+		sum = sum + -1 * (s[i] - 48) * multiplier;
 	}
-	/* Make positive if necesary */
 	if (mins % 2 == 0)
 		sum = -1 * sum;
-	/* Return sum */
 	return (sum);
 }
