@@ -49,10 +49,10 @@ int _atoi(char *s)
 			j++;
 		}
 		place--;
-		sum = sum + (s[i] - 48) * multiplier;
+		sum = sum + -1*(s[i] - 48) * multiplier;
 	}
-	/* Make negative if necesary */
-	if (mins % 2 == 1)
+	/* Make positive if necesary */
+	if (mins % 2 == 0)
 		sum = -1 * sum;
 	/* Return sum */
 	return (sum);
