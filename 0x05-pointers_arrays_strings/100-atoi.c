@@ -25,6 +25,8 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-')
 			mins++;
+		if (s[i] == '\0')
+			return (0);
 		i++;
 		first = i;
 	}
@@ -35,9 +37,6 @@ int _atoi(char *s)
 		digits++;
 		i++;
 	}
-	/* Return 0 if no digits */
-	if (digits == 0)
-		return (0);
 	/* Convert digits in string to an integer value */
 	place = digits;
 	for (i = first; i < first + digits; i++)

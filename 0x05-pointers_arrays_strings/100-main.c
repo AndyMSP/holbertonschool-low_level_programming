@@ -11,7 +11,7 @@ int main(void)
 {
 	int nb;
 
-	nb = _atoi("-- -987 Battery Street;ran, CA 94111 - USA             ");
+	nb = _atoi("");
 	printf("%d\n", nb);
 	return (0);
 }
