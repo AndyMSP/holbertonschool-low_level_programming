@@ -11,10 +11,8 @@
 char *leet(char *s)
 {
 	int i = 0;
-/*	int j = 0;
+	int j = 0;
 	char rep[] = "aA44Ee33oO00tT77lL11";
-*/
-	char num[] = "4433007711";
 
 	while (s[i])
 	{
@@ -22,17 +20,13 @@ char *leet(char *s)
 			s[i] == 'O' || s[i] == 'o' || s[i] == 'T' || s[i] == 't' ||
 			s[i] == 'L' || s[i] == 'l')
 		{
-/*			j = 0;
+			j = 0;
 			while (s[i] != rep[j] && j < 20)
 			{
 				j++;
 			}
 			s[i] = rep[j + 2];
-*/
-
-		s[i] = num[i];
 		}
-
 	i++;
 	}
 	return (s);
