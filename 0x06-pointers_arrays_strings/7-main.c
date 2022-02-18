@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char s[] = "AaEeOoTtLlAaEe\n";
+	char s[] = "AaEeOoTtLl\n";
 	char *p;
 
 	p = leet(s);
