@@ -12,7 +12,7 @@ char *leet(char *s)
 {
 	int i = 0;
 	int j = 0;
-	char rep[] = "Aa44Ee33Oo00Tt77Ll11";
+	char rep[] = "aA44Ee33oO00tT77lL11";
 
 	while (s[i])
 	{
@@ -21,7 +21,7 @@ char *leet(char *s)
 			s[i] == 'L' || s[i] == 'l')
 		{
 			j = 0;
-			while (s[i] != rep[j] && j < 15)
+			while (s[i] != rep[j] && j < 20)
 			{
 				j++;
 			}
