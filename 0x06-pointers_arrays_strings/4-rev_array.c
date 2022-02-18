@@ -15,7 +15,7 @@ void reverse_array(int *a, int n)
 	int end;
 	int i = 0;
 
-	while (i <= n / 2)
+	while (i < n / 2)
 	{
 		beg = a[i];
 		end = a[n - i - 1];
@@ -23,7 +23,7 @@ void reverse_array(int *a, int n)
 		a[n - i - 1] = beg;
 /*
  *		printf("n = %d,   i = %d,   beg = %d,   end = %d\n", n, i, beg, end);
-*/
+ */
 		i++;
 	}
 }
