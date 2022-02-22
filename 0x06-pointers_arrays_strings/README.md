@@ -1,1 +1,18 @@
-0x06. C - More pointers, arrays and strings
+# 0x06. C - More pointers, arrays and strings
+- 0-strcat.c
+	- Write a simplified clone of standard library function "strcat"
+- 1-strncat.c
+	- Write a simplified clone of standard library function "strncat"
+- 2-strncpy.c
+	- Write a simplified clone of standard library function "strncpy"
+- 3-strcmp.c
+	- Write a simplified clone of standard library function "strcmp"
+- 4-rev_array.c
+	- Write a function that reverses the content of an array of integers.  The array has n elements.
+- 5-string_toupper.c
+	- Write a function that changes all lowercase letters of a string to uppercase.
+- 6-cap_string.c
+	- Write a function that capitalizes all words of a string
+		- Separators of words: space, tabulation, new line, ,, ;, ., !, ?, ", (, ), {, and }
+- 7-leet.c
+	- Write a function that encodes a string into 1337
