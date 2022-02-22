@@ -1,1 +1,11 @@
-0x04. C - More functions, more nested loops
+# 0x04. C - More functions, more nested loops
+- 0-isupper.c
+	- Function determines if character is uppercase.  Returns 1 if yes and 0 if not.
+- 1-isdigit.c
+	- Function determines whether a character is a digit.  Return 1 if yes or 0 if not.
+- 2-mul.c
+	- Function multiplies two integers and returns result as an integer.
+- 3-print_numbers.c
+	- Function prints 0 to 9 using loops and \_putchar
+- 4-print_most_numbers.c
+	- Function prints numbers 0 to 9 but skips 2 and 4.
