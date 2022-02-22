@@ -20,7 +20,7 @@ char *_strchr(char *s, char c)
 			return (s + i);
 		}
 	i++;
-	} while (s[i]);
+	} while (s[i] >= '\0');
 
 	return (0);
 }
