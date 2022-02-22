@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char *s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ012345678910abcdefghijklmnopqrstuvwxyz";
+	char *s = " A	B \n CDEFGHIJKLMNOPQRSTUVWXYZ012345678910abcdefghijklmnopqrstuvwxyz";
 	char *f;
 
 	f = _strchr(s, 'B');
