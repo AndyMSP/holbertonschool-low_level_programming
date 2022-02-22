@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-	char *s = " A	B \n CDEFGHIJKLMNOPQRSTUVWXYZ012345678910abcdefghijklmnopqrstuvwxyz";
+	char *s = "Hello";
 	char *f;
 
-	f = _strchr(s, 'B');
+	f = _strchr(s, 'l');
 
 	if (f != NULL)
 	{
