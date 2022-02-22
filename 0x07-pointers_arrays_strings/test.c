@@ -16,6 +16,7 @@ char *_strchr(char *s, char c)
 
 	if (s[0] == '\0' && c == '\0')
 	{
+		printf("returns pointer to NULL character\n");
 		return (s);
 	}
 
@@ -23,10 +24,12 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
+			printf("returns pointer to letter\n");
 			return (s + i);
 		}
 	i++;
 	}
+	printf("returns 0\n");
 	return (0);
 	
 }
