@@ -29,6 +29,8 @@ unsigned int _strspn(char *s, char *accept)
 			else
 				matched = 0;
 		}
+	if (accept[0] == 0)
+		return (0);
 	}
 
 	return (i);
