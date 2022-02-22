@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-	char *s = "123aA";
+	char *s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ012345678910abcdefghijklmnopqrstuvwxyz";
 	char *f;
 
-	f = _strchr(s, 'A');
+	f = _strchr(s, 'z');
 
 	if (f != NULL)
 	{
