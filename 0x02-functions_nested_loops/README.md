@@ -2,3 +2,24 @@
 - 0-putchar.c
 	- Write a program that prints \_putchar, followed by a new line and returns 0.
 - 1-alphabet.c
+	- Prints the alphabet in lowercase followed by a new line.
+- 2-print_alphabet_x10.c
+	- Prints the alphabet 10 times in lowercase with a new line after each
+- 3-islower.c
+	- Create a clone of standard library "islower" function
+- 4-isalpha.c
+	- Create a clone of standard library "isalpha" function
+- 5-sign.c
+	- Determines the sign of an integer
+- 6-abs.c
+	- Create a clone of standard library "abs" function
+- 7-print_last_digit.c
+	- Print the last digit of a number and return the value of that digit
+- 8-24_hours.c
+	- Print every minute of the day from 00:00 to 23:59 on new lines
+- 9-times_table.c
+	- Print the 9 times table starting with 0
+- 10-add
+	- Add two integers and return the result
+- 11-print_to_98.c
+	- Create a function that prints all natural numbers from n to 98 followed by a new line
