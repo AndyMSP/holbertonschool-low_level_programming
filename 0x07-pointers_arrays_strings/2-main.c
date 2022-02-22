@@ -11,7 +11,7 @@ int main(void)
 	char *s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ012345678910abcdefghijklmnopqrstuvwxyz";
 	char *f;
 
-	f = _strchr(s, 'z');
+	f = _strchr(s, 'B');
 
 	if (f != NULL)
 	{
