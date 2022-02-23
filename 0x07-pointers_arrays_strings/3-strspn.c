@@ -15,7 +15,9 @@ unsigned int _strspn(char *s, char *accept)
 	int i = 0;
 	char ch;
 
-	for (ch = s[i]; _match(ch, accept); ch = s[++i]);
+	for (ch = s[i]; _match(ch, accept); ch = s[++i])
+	{
+	}
 
 	return (i);
 }
