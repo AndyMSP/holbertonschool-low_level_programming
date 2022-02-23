@@ -9,7 +9,7 @@
 int main(void)
 {
 	char *s = "hexllo, world";
-	char *f = "oleh";
+	char *f = "h";
 	unsigned int n;
 
 	n = _strspn(s, f);
