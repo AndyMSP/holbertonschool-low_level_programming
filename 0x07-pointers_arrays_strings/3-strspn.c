@@ -12,7 +12,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
+	nt i = 0;
 	char ch;
 
 	ch = s[i];
