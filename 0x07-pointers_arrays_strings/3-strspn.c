@@ -24,10 +24,14 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				i++;
 				matched = 1;
+				printf("Match: i = %d, s[i] = %c, j = %c, accept[j] = %c\n", i, s[i], j, accept[j]);
 				break;
 			}
 			else
+			{
 				matched = 0;
+				printf("NOO Match: i = %d, s[i] = %c, j = %d, accept[j] = %d\n", i, s[i], j,     accept[j]);
+			}
 		}
 	}
 
