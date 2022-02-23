@@ -12,28 +12,37 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i = 0;
-	unsigned int j = 0;
-	int matched = 1;
+	int i = 0;
+	char ch;
 
-	while (s[i] && matched == 1)
+	ch = s[i];
+	while (_match(ch, accept))
 	{
-		for (j = 0; accept[j] >= 0; j++)
-		{
-			if (s[i] == accept[j])
-			{
-				i++;
-				matched = 1;
-				printf("Match: i = %d, s[i] = %c, j = %c, accept[j] = %c\n", i, s[i], j, accept[j]);
-				break;
-			}
-			else
-			{
-				matched = 0;
-				printf("NOO Match: i = %d, s[i] = %c, j = %d, accept[j] = %d\n", i, s[i], j,     accept[j]);
-			}
-		}
+		i++;
+		ch = s[i];
 	}
 
 	return (i);
+}
+
+/**
+ * _match - determines if a char ch matches any char from a string
+ * @ch: character
+ * @accept: pointer to character
+ *
+ * Return: int 1 if match and 0 if no match
+ */
+
+int _match(char ch, char *accept)
+{
+	int i = 0;
+
+	while (accept[i])
+	{
+		if (accept[i] == ch)
+			return (1);
+		i++;
+	}
+
+	return (0);
 }
