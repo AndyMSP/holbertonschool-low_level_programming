@@ -5,3 +5,5 @@
 	- Contains a function, \_memcpy(), that copies n bytes from memory area src to memory area dest and returns a pointer to dest.
 - 2-strchr.c
 	- Contains a function, \_strchr(), that searches for the first occurrence of the character c in a string s and returns a pointer to that character or returns NULL if the character is not found.
+- 3-strspn.c
+	- Contains two functions.  Together they act as a clone of standard library function strspn.
