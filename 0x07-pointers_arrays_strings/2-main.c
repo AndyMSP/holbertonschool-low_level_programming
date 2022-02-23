@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char *s = "fljsd,skfdjs";
+	char *s = "abc";
 	char *f;
 
 	f = _strchr(s, '\0');
