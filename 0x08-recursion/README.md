@@ -5,3 +5,5 @@
 	- Contains a function, \_print_rev_recursion(), that prints a string in reverse using recursion and no loops.
 - 2-strlen_recursion.c
 	- Contains a function, \_strlen_recursion(), that returns the length of a string, not including the NULL byte, using recursion and no loops.
+- 3-factorial.c
+	- Contains a function, factorial(), that returns the factorial of its argument or -1 if the argument is a negative number.
