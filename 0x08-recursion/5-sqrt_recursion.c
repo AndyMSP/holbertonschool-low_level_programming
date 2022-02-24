@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 
+int root_check(int square, int root);
+
 /**
  * _sqrt_recursion - finds the square root of a number
  * @n: an integer
  *
  * Return: The square root of n or -1 if n does not have an integer square root
  */
-
-int root_check(int n, int num);
 
 int _sqrt_recursion(int n)
 {
