@@ -7,3 +7,5 @@
 	- Contains a function, \_strlen_recursion(), that returns the length of a string, not including the NULL byte, using recursion and no loops.
 - 3-factorial.c
 	- Contains a function, factorial(), that returns the factorial of its argument or -1 if the argument is a negative number.
+- 4-pow_recursion.c
+	- Contains a function, \_pow_recursion(), which returns the value of an integer raised to the power of another integer.
