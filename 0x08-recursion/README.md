@@ -9,3 +9,7 @@
 	- Contains a function, factorial(), that returns the factorial of its argument or -1 if the argument is a negative number.
 - 4-pow_recursion.c
 	- Contains a function, \_pow_recursion(), which returns the value of an integer raised to the power of another integer.
+- 5-sqrt_recursion.c
+	- Contains two functions which together return the square root of a number using recursion or -1 if there is no natural square root.
+- 6-is_prime_number.c
+	- Contains a function that determines if a number is a prime number.
