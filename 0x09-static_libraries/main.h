@@ -1,5 +1,5 @@
-#ifndef main
-#define main
+#ifndef _main_
+#define _main_
 
 int _putchar(char c);
 int _islower(int c);
@@ -22,5 +22,6 @@ unsigned int _strspn(char *s, char *accept);
 int _match(char ch, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+int main(void);
 
 #endif
