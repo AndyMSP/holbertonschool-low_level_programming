@@ -37,16 +37,14 @@ char *_strdup(char *str)
 	int i = 0;
 	char *dup;
 
-	len = _strlen(str);
+	if (str == NULL)
+		return (0);
 
-	printf("len = %d\n", len);
+	len = _strlen(str);
 
 	dup = malloc(sizeof(*dup) * len);
 
 	if (dup == NULL)
-		return (0);
-
-	if (str == NULL)
 		return (0);
 
 	for (i = 0; i < len; ++i)
