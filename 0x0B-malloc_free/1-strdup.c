@@ -1,0 +1,55 @@
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * _strlen - Calculates length of a string
+ * @s: a string ending with '\0'
+ *
+ * Return: int length of string
+ */
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (*s != '\0')
+	{
+		s++;
+		i++;
+	}
+
+	return (i);
+}
+
+
+/**
+ * _strdup - Allocate memory for a string and initialize the
+ *	the memory with input value str
+ * @str: a pointer to a character
+ *
+ * Return: pointer to a string if succesful or 0 if failed
+ */
+
+char *_strdup(char *str)
+{
+	int len = 0;
+	int i = 0;
+	char *dup;
+
+	len = _strlen(str);
+
+	dup = malloc(sizeof(*dup) * len);
+
+	if (dup == 0)
+		return (0);
+
+	if (str == 0)
+		return (0);
+
+	for (i = 0; i < len; ++i)
+	{
+		dup[i] = str[i];
+	}
+
+	return (dup);
+}
