@@ -35,3 +35,5 @@
 		- You might have to install the package libc6-dev-i386 on your Linux (Vagrant) to test the -m32 gcc option
 - 100-intel
 	- A script that generates the assembly code in intel syntax from the main.c file stored in the variable $CFILE.
+- 101-quote.c
+	- Demonstrates how to print to the standard error.
