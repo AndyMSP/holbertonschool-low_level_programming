@@ -15,3 +15,5 @@
 	- Contains a function that prints a chessboard to the standard output.
 - 8-print_diagsums.c
 	- Contains a function that prints the sum of the diagonals of matrices but the matrices have been cast as a pointer to the first integer in the matrix.
+- 100-set_string.c
+	- Contains a function that changes the address a pointer points to.
