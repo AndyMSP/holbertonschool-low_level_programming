@@ -3,3 +3,7 @@
 	- Contains a function that creates an array of characters in memory allocated by the malloc function.
 - 1-strdup.c
 	- Contains a function that duplicates a string and allocates memory using malloc.
+- 2-str_concat.c
+	- Contains a function that concatenates two strings
+- 3-alloc_grid.c
+	- Contains a function that allocates space for a matrix and fills it with 0's.
