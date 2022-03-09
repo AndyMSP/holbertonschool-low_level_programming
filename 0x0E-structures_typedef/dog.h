@@ -1,3 +1,6 @@
+#ifndef 0_DOG
+#define 0_DOG
+
 /**
  * struct dog - contains name, age and owner
  * @name: pointer to a char
@@ -10,3 +13,5 @@ struct dog
 	float age;
 	char *owner;
 };
+
+#endif
