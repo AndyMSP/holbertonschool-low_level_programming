@@ -1,5 +1,5 @@
-#ifndef 0_DOG
-#define 0_DOG
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog - contains name, age and owner
