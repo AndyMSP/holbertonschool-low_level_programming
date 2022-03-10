@@ -26,7 +26,7 @@ void simple_print_buffer(int *buffer, unsigned int size)
 		{
 			printf("\n");
 		}
-		printf("0x%02x", buffer[i]);
+		printf("%02d", buffer[i]);
 		i++;
 	}
 	printf("\n");
@@ -51,7 +51,7 @@ int main(void)
 		return (1);
 	}
 	for (i = 0; i < nmemb; ++i)
-		a[i] = 98;
+		a[i] = i;
 	simple_print_buffer(a, nmemb);
 	free(a);
 	return (0);
