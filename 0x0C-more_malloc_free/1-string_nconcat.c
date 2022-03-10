@@ -33,6 +33,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	/*Allocate memory for s3*/
 	s3 = malloc(len3 * sizeof(char));
+	if (s3 == NULL)
+		return (NULL);
 
 	/*Copy values into s3*/
 	for (i = 0; i < len1; i++)
