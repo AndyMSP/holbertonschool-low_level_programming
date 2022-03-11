@@ -16,8 +16,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t ndog, *ptr;
 	char *name_copy, *owner_copy;
 
-	name_copy = malloc(sizeof(char) * (strlen(name) + 1);
-	owner_copy = malloc(sizeof(char) * (strlen(owner) + 1);
+	name_copy = malloc(sizeof(char) * (strlen(name) + 1));
+	owner_copy = malloc(sizeof(char) * (strlen(owner) + 1));
 
 	strcpy(name_copy, name);
 	strcpy(owner_copy, owner);
