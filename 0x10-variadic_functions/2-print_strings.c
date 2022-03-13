@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - prints n numbers separated by a specified string
+ * print_strings - prints n numbers separated by a specified string
  * @separator: pointer to char
  * @n: number of numbers to print
  *
