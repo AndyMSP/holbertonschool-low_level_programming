@@ -14,6 +14,9 @@ list_t *add_node(list_t **head, const char *str)
 	int len;
 
 	new = malloc(sizeof(list_t));
+	if (new == NULL)
+		return (NULL);
+
 	dup = strdup(str);
 	len = strlen(dup);
 
