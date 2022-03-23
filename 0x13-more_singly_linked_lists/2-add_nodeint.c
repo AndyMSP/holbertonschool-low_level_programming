@@ -3,7 +3,7 @@
 /**
  * add_nodeint - add new node at the beginning of a listint_t list
  * @head: pointer to pointer to first node in list
- * n: integer to write to newly created node
+ * @n: integer to write to newly created node
  *
  * Return: pointer to new element or NULL if failed
  */
