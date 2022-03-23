@@ -13,7 +13,7 @@ int main(void)
 	list_t *head;
 	list_t *new;
 	list_t hello = {"World", 5, NULL};
-	size_t n;
+	list_t	
 
 	head = &hello;
 	new = malloc(sizeof(list_t));
@@ -26,15 +26,21 @@ int main(void)
 	new->len = 5;
 	new->next = head;
 	head = new;
-	n = print_list(head);
-	printf("-> %lu elements\n", n);
+	node1 = *head;
+	print_list(head);
+	node1 = *head;
 
-	printf("\n");
-	free(new->str);
-	new->str = NULL;
-	n = print_list(head);
-	printf("-> %lu elements\n", n);
+	printf("\n\n");
 
-	free(new);
+	new = malloc(sizeof(list_t));
+	new->str = "hola";
+	new->len = 100;
+	new->next = &hello;
+	node1.next = new;
+
+	print_list(head);
+
+
+
 	return (0);
 }
