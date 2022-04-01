@@ -17,7 +17,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	while (i < (int)idx - 1)
 	{
-		printf("idx1 = %u\n", idx - 1);
 		if (node == NULL)
 			return (NULL);
 		node = node->next;
