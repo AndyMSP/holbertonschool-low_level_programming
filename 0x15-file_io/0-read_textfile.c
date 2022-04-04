@@ -21,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	actual = write(STDOUT_FILENO, buff, actual);
 
-	return (actual);
+	close(fd);
 
-	return (0);
+	return (actual);
 }
