@@ -19,11 +19,18 @@ int create_file(const char *filename, char *text_content)
 	if (fd == -1)
 		return (-1);
 
+	printf("mode = %d\n", S_IRUSR | S_IWUSR);
+	printf("S_IRUSR = %d\n", S_IRUSR);
+	printf("S_IWUSR = %d\n", S_IWUSR);
+
 	/*write contents to file*/
-	len = strlen(text_content);
-	test = write(fd, text_content, len);
-	if (test == -1)
-		return (-1);
+	if (text_content != NULL)
+	{
+		len = strlen(text_content);
+		test = write(fd, text_content, len);
+		if (test == -1)
+			return (-1);
+	}
 
 	return (1);
 }
