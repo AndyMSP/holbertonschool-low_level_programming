@@ -1,3 +1,13 @@
 # 0x0A. C - argc, argv
 - 0-whatsmyname.c
-	- a program that writes its own name
+	- a program that prints its own name
+- 1-args.c
+	- a program that prints the number of arguments passed to it
+- 2-args.c
+	- a program that prints all arguments passed to it
+- 3-mul.c
+	- a program that prints the result of a multiplication between its 2 arguments
+- 4-add.c
+	- a program that prints the result of addition between any number of integer arguments
+- 5-chane.c
+	- a program that prints the minimum number of coins that could be used to give change for the number of cents given by the first argument
