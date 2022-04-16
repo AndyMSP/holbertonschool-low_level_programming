@@ -9,5 +9,5 @@
 	- a program that prints the result of a multiplication between its 2 arguments
 - 4-add.c
 	- a program that prints the result of addition between any number of integer arguments
-- 5-chane.c
+- 5-change.c
 	- a program that prints the minimum number of coins that could be used to give change for the number of cents given by the first argument
