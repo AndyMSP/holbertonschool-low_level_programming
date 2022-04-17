@@ -1,3 +1,11 @@
-#0x0D. C - Preprocessor
+# 0x0D. C - Preprocessor
 - 0-object_like_macro.h
 	- A header file that defines a macro named SIZE as an abbreviation for the token 1024.  Also protects against double inclusion.
+- 1-pi.h
+	- a header file with a macro that defines PI as 3.14159265359
+- 2-main.c
+	- contains a program that prints the name of the file it was compiled from
+- 3-function_like_macro.h
+	- a header file with a macro that represents the absolute value of a number
+- 4-sum.h
+	- a header file with a macro that represents the sum of two numbers
