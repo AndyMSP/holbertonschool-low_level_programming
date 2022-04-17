@@ -1,4 +1,4 @@
-#0x0B. C - malloc, free
+# 0x0B. C - malloc, free
 - 0-create_array.c
 	- Contains a function that creates an array of characters in memory allocated by the malloc function.
 - 1-strdup.c
@@ -7,3 +7,5 @@
 	- Contains a function that concatenates two strings
 - 3-alloc_grid.c
 	- Contains a function that allocates space for a matrix and fills it with 0's.
+- 4-free_grid.c
+	- Contains a function that frees memory allocated by alloc_grid function
