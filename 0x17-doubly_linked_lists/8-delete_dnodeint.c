@@ -17,7 +17,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (index == 0)
 	{
 		if (node == NULL)
-			return (-1);
+			return (1);
 		else
 		{
 			*head = node->next;
@@ -41,7 +41,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 
 	if (node == NULL)
+	{
+		printf("Too big\n");
 		return(-1);
+	}
 
 	if(after == NULL)
 	{
