@@ -20,11 +20,18 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		if (node == NULL)
 			return (-1);
+		else if (node->next == NULL)
+		{
+			*head = NULL;
+			free(node);
+			return(1);
+		}
 		else
 		{
 			*head = node->next;
+			node->next->prev = NULL;
 			free(node);
-			return(1);
+			return (1);
 		}
 	}
 
