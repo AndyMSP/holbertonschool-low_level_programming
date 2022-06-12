@@ -59,8 +59,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	index = key_index((const unsigned char *)node->key, ht->size);
 
-/*	node->next = ht->array[index];
-*/
+	node->next = ht->array[index];
 	ht->array[index] = node;
 
 
