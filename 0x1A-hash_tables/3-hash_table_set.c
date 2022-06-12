@@ -51,7 +51,7 @@ hash_node_t *create_node_pointer(const char *key, const char *value)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *node;
+	hash_node_t *node, *trav;
 
 	node = create_node_pointer(key, value);
 	if (node == NULL)
@@ -59,9 +59,19 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	index = key_index((const unsigned char *)node->key, ht->size);
 
+	trav = ht->array[index];
+	while(trav != NULL)
+	{
+		if (strcmp(trav->key, node->key) == 0)
+		{
+			trav->value = node->value;
+			return (1);
+		}
+		trav = trav->next;
+	}
+
 	node->next = ht->array[index];
 	ht->array[index] = node;
-
 
 	return (1);
 }
