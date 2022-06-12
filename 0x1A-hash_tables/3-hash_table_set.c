@@ -67,6 +67,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(trav->key, node->key) == 0)
 		{
+			free(trav->value);
 			trav->value = node->value;
 			return (1);
 		}
