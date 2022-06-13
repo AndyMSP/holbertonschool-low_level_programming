@@ -51,5 +51,6 @@ void hash_table_delete(hash_table_t *ht);
 
 /*Other function prototypes*/
 hash_node_t *create_node_pointer(const char *key, const char *value);
+void _hash_table_print(const hash_table_t *ht);
 
 #endif

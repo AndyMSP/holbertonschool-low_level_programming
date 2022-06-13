@@ -12,9 +12,10 @@ int main(void)
 {
 	hash_table_t *ht;
 
-	ht = hash_table_create(1024);
+	ht = hash_table_create(10);
 	hash_table_set(ht, "betty", "cool");
 	hash_table_set(ht, "hetairas", "collides with mentioner");
 	hash_table_set(ht, "mentioner", "collides with hetairas");
+	_hash_table_print(ht);
 	return (EXIT_SUCCESS);
 }
