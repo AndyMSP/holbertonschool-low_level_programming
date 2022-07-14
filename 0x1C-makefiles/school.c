@@ -7,6 +7,6 @@
  */
 void print_school(void)
 {
-	printf("Task1\n");
+	printf("Task02\n");
 
 }
