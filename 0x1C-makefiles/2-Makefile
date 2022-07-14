@@ -1,12 +1,12 @@
 CC=gcc
 SRC=main.c school.c
-OBJ=main.o school.o
+OBJ=$(addsuffix .o, $(basename $(SRC)))
 NAME=school
 
-all: school
+all: $(NAME)
 
-school: $(OBJ)
-	$(CC) $(OBJ) -o school
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
-OBJ: $(SRC) m.h
-	CC -c SRC
+$(OBJ): $(SRC)
+	$(CC) $(SRC) -c
