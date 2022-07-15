@@ -6,7 +6,7 @@ NAME=school
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
 
 .PHONY: clean
