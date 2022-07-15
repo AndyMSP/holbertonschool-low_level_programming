@@ -4,7 +4,6 @@
 
 def island_perimeter(grid):
     """function that calculates island perimeter"""
-    
     # add padding of 0's to grid
     for row in grid:
         row.insert(0, 0)
