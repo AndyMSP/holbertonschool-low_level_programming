@@ -3,6 +3,12 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
+
+/**
+ * main - Generates a random number and determines its sign
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
 	int n;
@@ -15,7 +21,7 @@ int main(void)
 	else if (n < 0)
 		printf("%d is negative\n", n);
 	else
-		printf("0 is zero");
+		printf("0 is 0\n");
 	/* your code ends here*/
 	return (0);
 }
