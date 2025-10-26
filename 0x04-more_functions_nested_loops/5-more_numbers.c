@@ -14,9 +14,10 @@ void more_numbers(void)
 	{
 		for (n = 0; n <= 14; n++)
 		{
-			tens = n > 9 ? '0' + n / 10 : '\0';
+			tens = '0' + n / 10;
 			ones = '0' + n % 10;
-			_putchar(tens);
+			if (n >= 10)
+				_putchar(tens);
 			_putchar(ones);
 		}
 		_putchar('\n');
