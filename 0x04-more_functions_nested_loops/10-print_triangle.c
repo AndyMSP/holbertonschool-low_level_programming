@@ -23,7 +23,7 @@ void print_triangle(int size)
 
 		for (j = 0; j < spaces; j++)
 		{
-			_putchar('.');
+			_putchar(' ');
 		}
 		for (j = 0; j < hashes; j++)
 		{
