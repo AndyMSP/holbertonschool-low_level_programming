@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98: Update value of pointee
+ * reset_to_98 - Update value of pointee
  * @n: pointer to an int
  *
  * Return: Void
