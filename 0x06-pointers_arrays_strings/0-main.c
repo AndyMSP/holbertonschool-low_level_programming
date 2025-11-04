@@ -8,11 +8,15 @@
  */
 int main(void)
 {
-	char s1[6];
+	char s1[98] = "Original";
+	char s2[] = "added \n";
 	char *ptr;
 
-	ptr = _strcpy(s1, "12345\n");
+	printf("%s\n", s1);
+	printf("%s", s2);
+	ptr = _strcat(s1, s2);
 	printf("%s", s1);
+	printf("%s", s2);
 	printf("%s", ptr);
 	return (0);
 }
