@@ -12,7 +12,8 @@ int main(void)
 	char s2[] = "World!";
 
 	printf("%d\n", _strcmp("12", "123"));
-	printf("%d\n", _strcmp(s2, s1));
-	printf("%d\n", _strcmp(s1, s1));
+	printf("%d\n", _strcmp("", "1"));
+	printf("%d\n", _strcmp("1", ""));
+	printf("%d\n", _strcmp(s1, s2));
 	return (0);
 }
