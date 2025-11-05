@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char str[] = "a\n";
+	char str[] = "  hello World how???are you?\n";
 	char *ptr;
 
 	ptr = cap_string(str);
