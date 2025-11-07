@@ -14,6 +14,9 @@ char *_strstr(char *haystack, char *needle)
 	int j = 0;
 	int target = 0;
 
+	if (!*needle)
+		return (haystack);
+
 	for (i = 0; haystack[i]; i++)
 	{
 		j = 0;

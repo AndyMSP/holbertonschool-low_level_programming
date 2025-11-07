@@ -9,10 +9,10 @@
 int main(void)
 {
 	char *s = "hello, world";
-	char *f = "ellso";
+	char *f = "";
 	char *t;
 
 	t = _strstr(s, f);
-	printf("%s\n", t);
+	printf("%s\n", (t == NULL ? "nil" : t));
 	return (0);
 }
