@@ -1,15 +1,29 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * find_root - find root of y
+ * @x: guess for root of y
+ * @y: int to find root of
+ *
+ * Return: int root of y or -1 if no root
+ */
 int find_root(int x, int y)
 {
-	if (x > y)
+	/**
+	 * sqrt(y) = x if x*x = y
+	 */
+
+	int answer;
+
+	if (x * x > y)
 		return (-1);
 
 	if (x * x == y)
 		return (x);
 
-	return (find_root(x + 1, y));
+	answer = find_root(x + 1, y);
+	return (answer);
 }
 
 /**
@@ -20,14 +34,6 @@ int find_root(int x, int y)
  */
 int _sqrt_recursion(int n)
 {
-	/**
-	 * sqrt(n) = x if x*x = n
-	 */
-	if (n == 0)
-		return (0);
-
-	if (n == 1)
-		return (1);
 
 	if (n < 0)
 		return (-1);
