@@ -30,6 +30,8 @@ char *str_concat(char *s1, char *s2)
 
 	/* allocate memory to new string with checks */
 	cat = malloc((len + 1) * sizeof(char));
+	if (!cat)
+		return (NULL);
 
 	/* write data into new string */
 	for (i = 0, j = 0, k = 0; i < len + 1; i++)
