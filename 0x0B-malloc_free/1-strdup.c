@@ -14,14 +14,14 @@ char *_strdup(char *str)
 	char *cpy;
 
 	/* Determine length with checks */
-	if (!str || !*str)
+	if (!str)
 		return (NULL);
 
-	len = 1;
 	while (str[len])
 	{
 		len++;
 	}
+	len++;
 
 	/* Allocate memory with checks */
 	cpy = malloc(len * sizeof(char));
@@ -33,7 +33,6 @@ char *_strdup(char *str)
 	{
 		cpy[i] = str[i];
 	}
-	/* str[i] = '\0'; */
 
 	return (cpy);
 }
