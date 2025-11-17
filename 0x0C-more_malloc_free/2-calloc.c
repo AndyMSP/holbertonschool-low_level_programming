@@ -23,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (!mem)
 		return (NULL);
 
-	memset(mem, 0, size);
+	memset(mem, 0, nmemb);
 
 	return (mem);
 }
