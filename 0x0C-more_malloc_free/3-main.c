@@ -39,9 +39,12 @@ void simple_print_buffer(int *buffer, unsigned int size)
 int main(void)
 {
 	int *a;
+	int min = 3;
+	int max = 6;
+	int nmemb = max - min + 1;
 
-	a = array_range(0, 10);
-	simple_print_buffer(a, 11);
+	a = array_range(min, max);
+	simple_print_buffer(a, nmemb);
 	free(a);
 	return (0);
 }
