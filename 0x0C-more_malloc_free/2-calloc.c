@@ -4,28 +4,26 @@
 #include "main.h"
 
 /**
- * _calloc - allocates memory for an array of "nmemb" elements of size "size"
- * @nmemb: unsigned int representing number of elements in array
+ * _calloc - allocate and initialize memory (all to zero)
+ * @nmemb: number of members to allocate
  * @size: size in bytes of each member
  *
- * Return: pointer to first element of new array
+ * Return: pointer to new memory or null on failure
  */
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int bytes = 0;
-	void *arr;
+	char *mem = NULL;
 
 	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
+
+	mem = malloc(nmemb * size);
+	if (!mem)
 		return (NULL);
 
-	bytes = size * nmemb;
+	memset(mem, 0, nmemb * size);
 
-	arr = malloc(bytes);
-	if (arr == NULL)
-		return (NULL);
-
-	memset(arr, 0, bytes);
-
-	return (arr);
+	return (mem);
 }
