@@ -19,16 +19,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	d = malloc(sizeof(dog_t));
 	if (!d)
 		return (NULL);
-
 	/* Determine size of each member */
 	while (name[size_name])
 		size_name++;
 	while (owner[size_owner])
 		size_owner++;
-
 	size_name++;
 	size_owner++;
-
 	/* Allocate memory for each member */
 	d->name = malloc(sizeof(char) * size_name);
 	if (!d->name)
@@ -51,6 +48,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	d->age = age;
 	for (i = 0; i < size_owner; i++)
 		d->owner[i] = owner[i];
-
 	return (d);
 }
