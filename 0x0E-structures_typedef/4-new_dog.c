@@ -26,6 +26,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	while (owner[size_owner])
 		size_owner++;
 
+	size_name++;
+	size_owner++;
+
 	/* Allocate memory for each member */
 	d->name = malloc(sizeof(char) * size_name);
 	if (!d->name)
