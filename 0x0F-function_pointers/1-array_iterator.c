@@ -4,8 +4,10 @@
 /**
  * array_iterator - perform action on each element of an array
  * @array: array of integers
- * @size_t: size of array
+ * @size: size of array
  * @action: function pointer to function to apply to each element
+ *
+ * Return: void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
