@@ -16,16 +16,17 @@ int (*get_op_func(char *s))(int, int)
 		{"/", op_div},
 		{"%", op_mod},
 		{NULL, NULL}};
-	int i;
+	int i = 0;
 
 	/* Match s to ops[i][o] */
 	/* return ops[i][1] or NULL*/
-	for (i = 0; i < 6; i++)
+	while (i < 5)
 	{
 		if (s[0] == ops[i].op[0] && s[1] == 0)
 		{
 			return (ops[i].f);
 		}
+		i++;
 	}
 
 	return (NULL);
