@@ -73,12 +73,11 @@ void print_string(va_list ap)
  */
 void print_all(const char *const format, ...)
 {
-	int i = 0, printed;
+	int i = 0, j = 0, printed;
 	char c;
 	va_list ap;
 
 	va_start(ap, format);
-	/* Cycle through arguments */
 	i = 0;
 	while (format[i])
 	{
@@ -101,13 +100,17 @@ void print_all(const char *const format, ...)
 			print_string(ap);
 			printed = 1;
 			break;
-		default:
-			i++;
 		}
 		i++;
-		c = format[i];
-		if (printed && (c == 'c' || c == 'i' || c == 'f' || c == 's'))
-			printf(", ");
+		j = i;
+		c = format[j];
+		while (c)
+		{
+			if (printed && (c == 'c' || c == 'i' || c == 'f' || c == 's'))
+				printf(", ");
+			j++;
+			c = format[j];
+		}
 	}
 	printf("\n");
 }
