@@ -55,6 +55,12 @@ void print_string(va_list ap)
 	char *val;
 
 	val = (char *)(va_arg(ap, char *));
+
+	if (val == NULL)
+	{
+		val = "(nil)";
+	}
+
 	printf("%s", val);
 }
 
@@ -75,12 +81,6 @@ void print_all(const char *const format, ...)
 		{'i', print_int},
 		{'f', print_float},
 		{'s', print_string}};
-
-	if (format == NULL)
-	{
-		printf("\n");
-		return;
-	}
 
 	va_start(ap, format);
 	/* Cycle through arguments */
