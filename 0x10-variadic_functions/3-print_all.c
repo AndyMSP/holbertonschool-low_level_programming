@@ -79,32 +79,28 @@ void print_all(const char *const format, ...)
 
 	va_start(ap, format);
 	i = 0;
-
 	while (format && format[i])
 	{
-		printed = 0;
+		printed = 1;
 		switch (format[i])
 		{
 		case 'c':
 			print_char(ap);
-			printed = 1;
 			break;
 		case 'i':
 			print_int(ap);
-			printed = 1;
 			break;
 		case 'f':
 			print_float(ap);
-			printed = 1;
 			break;
 		case 's':
 			print_string(ap);
-			printed = 1;
 			break;
+		default:
+			printed = 0;
 		}
 		i++;
-		j = i;
-		c = format[j];
+		c = format[j = i];
 		while (c)
 		{
 			if (printed && (c == 'c' || c == 'i' || c == 'f' || c == 's'))
