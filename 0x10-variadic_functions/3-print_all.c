@@ -73,34 +73,35 @@ void print_string(va_list ap)
  */
 void print_all(const char *const format, ...)
 {
-	int i = 0, j = 0;
+	int i = 0;
 	va_list ap;
-
-	code_t picker[] = {
-		{'c', print_char},
-		{'i', print_int},
-		{'f', print_float},
-		{'s', print_string}};
 
 	va_start(ap, format);
 	/* Cycle through arguments */
 	i = 0;
 	while (format[i])
 	{
-		/* print a single argument */
-		j = 0;
-		while (j < 4)
+		switch (format[i])
 		{
-			if (picker[j].c == format[i])
-			{
-				picker[j].f(ap);
-				if (format[i + 1])
-					printf(", ");
-				break;
-			}
-			j++;
+		case 'c':
+			print_char(ap);
+			break;
+		case 'i':
+			print_int(ap);
+			break;
+		case 'f':
+			print_float(ap);
+			break;
+		case 's':
+			print_string(ap);
+			break;
+		default:
+			printf(", ");
+			break;
 		}
 		i++;
+		if (format[i])
+			printf(", ");
 	}
 	printf("\n");
 }
