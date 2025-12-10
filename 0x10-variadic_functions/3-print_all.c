@@ -80,9 +80,7 @@ void print_all(const char *const format, ...)
 	va_start(ap, format);
 	i = 0;
 
-	if (!format)
-		return;
-	while (format[i])
+	while (format && format[i])
 	{
 		printed = 0;
 		switch (format[i])
@@ -110,7 +108,10 @@ void print_all(const char *const format, ...)
 		while (c)
 		{
 			if (printed && (c == 'c' || c == 'i' || c == 'f' || c == 's'))
+			{
 				printf(", ");
+				break;
+			}
 			j++;
 			c = format[j];
 		}
