@@ -73,7 +73,8 @@ void print_string(va_list ap)
  */
 void print_all(const char *const format, ...)
 {
-	int i = 0;
+	int i = 0, printed;
+	char c;
 	va_list ap;
 
 	va_start(ap, format);
@@ -81,26 +82,31 @@ void print_all(const char *const format, ...)
 	i = 0;
 	while (format[i])
 	{
+		printed = 0;
 		switch (format[i])
 		{
 		case 'c':
 			print_char(ap);
+			printed = 1;
 			break;
 		case 'i':
 			print_int(ap);
+			printed = 1;
 			break;
 		case 'f':
 			print_float(ap);
+			printed = 1;
 			break;
 		case 's':
 			print_string(ap);
+			printed = 1;
 			break;
 		default:
-			printf(", ");
-			break;
+			i++;
 		}
 		i++;
-		if (format[i])
+		c = format[i];
+		if (printed && (c == 'c' || c == 'i' || c == 'f' || c == 's'))
 			printf(", ");
 	}
 	printf("\n");
