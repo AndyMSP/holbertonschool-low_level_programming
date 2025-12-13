@@ -12,6 +12,8 @@ void free_list(list_t *head)
 	list_t *node, *next;
 
 	node = head;
+	if (!node)
+		return;
 
 	while (node->next)
 	{
